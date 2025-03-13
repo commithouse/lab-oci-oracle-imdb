@@ -209,10 +209,8 @@ sqlplus c##tdc/TDC#inov_
 ```
 Uma boa maneira de verificar se a carga acabou é validando a tabela TBL_MOVIES_GENRES, pois é a última a ser
 carregada.
-
-#### SELECT COUNT(*) FROM
-
 ```
+SELECT COUNT(*) FROM
 tbl_movies_genres;
 ```
 ## 3. Testando a funcionalidade In-Memory

@@ -1,5 +1,3 @@
-# Runbook Laboratório Oracle Cloud Database
-
 # In-Memory (outubro 2024)
 
 - Daniel Lemeszenski
@@ -45,7 +43,6 @@ Local (opcionais)
 - Cliente de SSH
 Configuração:
 - Conta gratuita no Oracle Cloud
-
 
 
 ## 2. Provisionamento de recursos

@@ -355,16 +355,7 @@ from v$im_segments;**
 Agora execute novamente todos as queries acima e anote os novos custos de execução. Você terá algo parecido com o
 apresentado abaixo:
 
-**Consulta Custo em linha / disco Custo em colunar / memória Ganho de Performance**
-1
-2
-3
-4
-5
-
 A relação de custo antes e depois de ativar o in-memory foi de XX%.
-
-O que podemos concluir através desses resultados?
 
 Confirme a exclusão do banco de dados entrando com o nome do sistema e clique em Encerrar Sistema de BD. O banco
 de dados será encerrado definitivamente e não consumirá mais recursos de seu tenant.

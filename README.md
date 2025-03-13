@@ -346,7 +346,7 @@ bytes/1024/1024 tam_original_mb,
 inmemory_size/1024/1024 tam_memoria_mb,
 round(bytes / inmemory_size, 2) taxa_comp,
 round((inmemory_size / bytes)*100, 2) pct_orig
-from v$im_segments;**
+from v$im_segments;
 ```
 Agora execute novamente todos as queries acima e anote os novos custos de execução. Você terá algo parecido com o
 apresentado abaixo:

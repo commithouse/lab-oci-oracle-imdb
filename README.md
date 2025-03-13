@@ -48,9 +48,6 @@ Configuração:
 
 
 
-##Laboratório Oracle Cloud Database In-Memory | Runbook
-#### ______
-
 ## 2. Provisionamento de recursos
 
 ### 2.1. Criação de VCN (Virtual Cloud Network)
@@ -69,11 +66,6 @@ de VCN.
 sugestões. Clique em Próximo.
 
 
-
-
-
-#### ______
-
 Confira as configurações e clique em PRÓXIMO.
 
 Confira novamente e clique em criar.
@@ -86,7 +78,7 @@ Lista de Segurança.
 
 
 
-Escolha a sub-rede PÚBLICA:
+### Escolha a sub-rede PÚBLICA:
 
 
 1. Vamos editar a SL (Security List) pública, clique em Default Security List for <nome_da_vcn>.

@@ -161,7 +161,7 @@ solicitado.
 cd .ssh
 ssh -i ./chave1 opc@<<seu ip>>
 sudo su - oracle
-sqlplus / as sysdba**
+sqlplus / as sysdba
 ```
 Siga os passos acima para confirmar que a conectividade ao banco de dados está funcionando conforme esperado. Na
 sequência pode sair do SQL*Plus com o comando _exit_ ;.
@@ -177,13 +177,13 @@ wget https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/groyzeiavcrz/b/Labs_A
 unzip Loader.zip
 cd Loader
 chmod 775 setup.sh
-nohup ./setup.sh &**
+nohup ./setup.sh &
 ```
 Os scripts serão executados em background, deve demorar uns 10 a 20 minutos. Pode ir pegar um café.
 
 Acesse o SQL*Plus para conferir se a carga terminou. Se a sua sessão tiver caído desde a etapa anterior, execute os 4
 passos abaixo, caso contrário, apenas o último comando.
-**cd .ssh**
+cd .ssh
 
 
 ```
@@ -212,7 +212,7 @@ SELECT DISTINCT character_name, actor_id
 FROM tbl_characters
 WHERE character_name like 'Darth Vader%';
 SELECT plan_table_output
-FROM TABLE(DBMS_XPLAN.DISPLAY('plan_table',null,'basic +predicate +cost'));**
+FROM TABLE(DBMS_XPLAN.DISPLAY('plan_table',null,'basic +predicate +cost'));
 ```
 
 Caso esteja curioso em saber o resultado desta e das demais consultas, você pode executá-la sem o _explain plan_.
@@ -239,7 +239,7 @@ tbl_actors a
 WHERE c.actor_id = a.actor_id
 AND c.character_name like 'Darth Vader%';
 SELECT plan_table_output
-FROM TABLE(DBMS_XPLAN.DISPLAY('plan_table',null,'basic +predicate +cost'));**
+FROM TABLE(DBMS_XPLAN.DISPLAY('plan_table',null,'basic +predicate +cost'));
 ```
 ```
 -- Quantos personagens cada um desses atores interpretou
@@ -276,7 +276,7 @@ AND mc.movie_id = mm.id
 AND c.actor_id = 15152
 ORDER BY popularidade DESC;
 SELECT plan_table_output
-FROM TABLE(DBMS_XPLAN.DISPLAY('plan_table',null,'basic +predicate +cost'));**
+FROM TABLE(DBMS_XPLAN.DISPLAY('plan_table',null,'basic +predicate +cost'));
 ```
 A consulta abaixo adiciona ainda mais complexidade, usando a maior tabela do banco, STG_RATINGS, que tem
 26.024.289 registros.
@@ -305,7 +305,7 @@ round(to_number(mm.popularity, '999D9999999999',
 ORDER BY popularidade DESC;
 SELECT plan_table_output
 FROM TABLE(DBMS_XPLAN.DISPLAY('plan_table',null,'basic +predicate
-+cost'));**
++cost'));
 ```
 
 Consequentemente o custo também é bastante alto. Note que também há diversas indicações TABLE ACCESS FULL,

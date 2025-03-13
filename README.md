@@ -271,8 +271,4 @@ A relação de custo antes e depois de ativar o in-memory foi de XX%.
 
 Confirme a exclusão do banco de dados entrando com o nome do sistema e clique em **Encerrar Sistema de BD**. O banco de dados será encerrado definitivamente e não consumirá mais recursos de seu tenant.
 
-### 4.2. Destruindo o banco de dados
-
-Confirme a exclusão do banco de dados entrando com o nome do sistema e clique em **Encerrar Sistema de BD**. O banco de dados será encerrado definitivamente e não consumirá mais recursos de seu tenant.
-
 

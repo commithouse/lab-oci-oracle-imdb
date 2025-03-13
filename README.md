@@ -1,9 +1,5 @@
 # In-Memory (outubro 2024)
 
-- Daniel Lemeszenski
-
-- Alexandre Alves Andrade
-
 - 1. Considerações iniciais e pré-requisitos Índice
    - Recursos usados:
    - Tópicos não cobertos:
